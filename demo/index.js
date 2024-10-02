@@ -56,7 +56,7 @@ const data = {
     padding: 0,
     effect: '',
     effectValue: 100,
-    spotPercent: 0,
+    spotPercent: 25,
     logo: false,
     logoType: 'image',
     logoText: 'Gerald',

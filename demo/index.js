@@ -134,7 +134,7 @@ new Vue({
         options.effect = {
           type: settings.effect,
           value: settings.effectValue / 100,
-          spotPercent: settings.spotPercent / 100
+          spotPercent: settings.spotPercent / 100,
         };
         if (settings.effect === 'spot') {
           options.background = [colorBack, this.$refs.effect];

@@ -196,7 +196,7 @@ function renderSpot({
   const {
     value,
     foregroundLight = COLOR_WHITE,
-    spotPercent = 0.25
+    spotPercent = 0.25,
   } = maskOptions;
   const context = canvasMask.getContext('2d');
   const canvasLayer = getCanvas(width);

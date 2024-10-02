@@ -196,6 +196,7 @@ function renderSpot({
   const {
     value,
     foregroundLight = COLOR_WHITE,
+    spotPercent = 0.25,
   } = maskOptions;
   const context = canvasMask.getContext('2d');
   const canvasLayer = getCanvas(width);
@@ -222,7 +223,7 @@ function renderSpot({
         ) {
           fillSize = 1 - 0.1 * value;
         } else {
-          fillSize = 0.25;
+          fillSize = Math.min(1, Math.max(0.25, spotPercent));
         }
         const offset = (1 - fillSize) / 2;
         context.fillRect(

@@ -63,6 +63,7 @@
           </label>
           <div v-show="settings.effect">
             <input class="form-input input-sm" type="range" min="0" max="100" step="5" v-model="settings.effectValue">
+            <input v-show="settings.effect === 'spot'" class="form-input input-sm" type="range" min="25" max="100" step="5" v-model="settings.spotPercent">
             <div v-show="settings.effect === 'spot'">
               <img src="https://user-images.githubusercontent.com/3139113/38300650-ed2c25c4-382f-11e8-9792-d46987eb17d1.png" ref="effect">
               <input class="form-input input-sm" type="file" @change="loadImage($event,'effect')">

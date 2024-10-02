@@ -110,6 +110,12 @@ export interface QRCanvasEffect {
    * The foreground color for `spot` effect.
    */
   foregroundLight?: string;
+  /**
+   * The percentage of a cell that should be dedicated to the QR code data. A ratio between 0.25..1.
+   *
+   * Defaults to 0.25
+   */
+  spotPercent?: number;
 }
 
 export interface QRCanvasBaseLayer {

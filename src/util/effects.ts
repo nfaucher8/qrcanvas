@@ -223,7 +223,7 @@ function renderSpot({
         ) {
           fillSize = 1 - 0.1 * value;
         } else {
-          fillSize = spotPercent;
+          fillSize = Math.min(1, Math.max(0.25, spotPercent));
         }
         const offset = (1 - fillSize) / 2;
         context.fillRect(

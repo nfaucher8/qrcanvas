@@ -115,7 +115,7 @@ export interface QRCanvasEffect {
    *
    * Defaults to 0.25
    */
-  spotPercent?: number;
+  spotRatio?: number;
 }
 
 export interface QRCanvasBaseLayer {
